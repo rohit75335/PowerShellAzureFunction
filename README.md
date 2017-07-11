@@ -1,0 +1,2 @@
+# PowerShellAzureFunction
+AutomationOfAzureFunction
