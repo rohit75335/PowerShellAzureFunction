@@ -7,12 +7,6 @@
         },
         "location": {
             "type": "String"
-        },
-        "sampleGraphicalRunbookName": {
-            "type": "String"
-        },
-        "sampleGraphicalRunbookDescription": {
-            "type": "String"
         }
     },
     "resources": [
@@ -27,29 +21,7 @@
                 "sku": {
                     "name": "Basic"
                 }
-            },
-            "resources": [
-                {
-                    "type": "runbooks",
-                    "apiVersion": "2015-01-01-preview",
-                    "name": "[parameters('sampleGraphicalRunbookName')]",
-                    "location": "[parameters('location')]",
-                    "dependsOn": [
-                        "[concat('Microsoft.Automation/automationAccounts/', parameters('accountName'))]"
-                    ],
-                    "tags": {},
-                    "properties": {
-                        "runbookType": "GraphPowerShell",
-                        "logProgress": "false",
-                        "logVerbose": "false",
-                        "description": "[parameters('sampleGraphicalRunbookDescription')]",
-                        "publishContentLink": {
-                            "uri": "[parameters('sampleGraphicalRunbookContentUri')]",
-                            "version": "1.0.0.0"
-                        }
-                    }
-                }
-            ]
+            }
         }
     ]
 }

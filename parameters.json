@@ -7,12 +7,6 @@
         },
         "location": {
             "value": "eastus"
-        },
-        "sampleGraphicalRunbookName": {
-            "value": "runbookgraph1"
-        },
-        "sampleGraphicalRunbookDescription": {
-            "value": "sample runbook"
         }
     }
 }
